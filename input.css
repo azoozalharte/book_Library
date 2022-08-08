@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .card {
+    @apply flex flex-col p-10 bg-slate-500 rounded-xl text-center;
+  }
+  .card-title {
+    @apply text-white text-xl font-bold;
+  }
+  .card-wraper {
+    @apply flex justify-between mt-2;
+  }
+  .card-body {
+    @apply text-gray-300 text-xs font-medium;
+  }
+  .button {
+    @apply bg-red-500 rounded-xl px-3 py-2 mt-10 hover:bg-red-700 text-white;
+  }
+}

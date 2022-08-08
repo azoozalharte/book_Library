@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Book Library</title>
+  </head>
+  <body>
+    <div class="bg-green-200 py-4 px-10 flex justify-between">
+      <p class="text-3xl text-green-600 font-extrabold">عبدالعزيز | يتعلم</p>
+      <p class="text-3xl text-green-600 font-extrabold">مكتبة إلكترونية</p>
+    </div>
+    <div class="container mx-auto mt-20">
+      <div class="flex flex-col items-center gap-10">
+        <form
+          action=""
+          onsubmit="return false"
+          class="flex flex-col items-center gap-5"
+        >
+          <div class="flex flex-col md:flex-row gap-5">
+            <div class="flex flex-col items-center gap-2">
+              <label for="title" class="text-xl font-bold">إسم الكتاب</label>
+              <input
+                type="text"
+                id="input-title"
+                class="bg-gray-400 pr-5 py-4 rounded-full"
+                required
+              />
+            </div>
+            <div class="flex flex-col items-center gap-2">
+              <label for="author" class="text-xl font-bold">إسم الكاتب</label>
+              <input
+                type="text"
+                id="input-author"
+                class="bg-gray-400 pr-5 py-4 rounded-full"
+                required
+              />
+            </div>
+            <div class="flex flex-col items-center gap-2">
+              <label for="pages" class="text-xl font-bold">عدد الصفحات </label>
+              <input
+                type="number"
+                id="input-pages"
+                class="bg-gray-400 pr-5 py-4 rounded-full"
+                required
+              />
+            </div>
+          </div>
+          <button
+            class="bg-green-400 hover:bg-green-600 py-4 px-6 rounded-full text-white"
+            id="adding"
+          >
+            إضافة الكتاب
+          </button>
+        </form>
+        <div
+          class="flex flex-col md:flex-row gap-6 flex-wrap"
+          id="card_container"
+        ></div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
+
+<!-- <div class="card">
+  <p class="card-title">عنوان الكتاب</p>
+  <div class="card-wraper">
+    <p class="card-body">أسم المؤلف</p>
+    <p class="card-body">234</p>
+  </div>
+  <button class="button">Delete</button>
+</div> -->
