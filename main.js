@@ -86,5 +86,8 @@ addButton.addEventListener("click", function () {
   } else {
     let newBook = new Book(title, author, pages, false);
     addBookToLibrary(newBook);
+    titleInput.value = "";
+    authorInput.value = "";
+    pagesInput.value = "";
   }
 });
